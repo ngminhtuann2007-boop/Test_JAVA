@@ -7,14 +7,16 @@ import java.time.LocalTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.StringJoiner;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.time.Duration;
 
-public class Class_String {
+public class Test {
     public static void main(String[] args) {
         // String[] date = {"08", "08", "2026"};
         // String[] It = {"Java", "Python", "C++"};
@@ -132,15 +134,15 @@ public class Class_String {
 
 
         /* OPTIONAL */
-        String name = null;
-        // An toàn:
-        Optional<String> opt1 = Optional.ofNullable(name); // Hộp rỗng (empty)
-        String result = opt1.orElse("Tên mặc định"); 
-        System.out.println(result); // In ra: Tên mặc định (vì name = null)
-        name = "tao là con người";
-        opt1 = Optional.ofNullable(name); // Hộp rỗng (empty)
+        // String name = null;
+        // // An toàn:
+        // Optional<String> opt1 = Optional.ofNullable(name); // Hộp rỗng (empty)
+        // String result = opt1.orElse("Tên mặc định"); 
+        // System.out.println(result); // In ra: Tên mặc định (vì name = null)
+        // name = "tao là con người";
+        // opt1 = Optional.ofNullable(name); // Hộp rỗng (empty)
         
-        result = opt1.orElse("Tên mặc định"); 
-        System.out.println(result); // In ra: Tên mặc định (vì name = null)
+        // result = opt1.orElse("Tên mặc định"); 
+        // System.out.println(result); // In ra: Tên mặc định (vì name = null)
    }  
 }
