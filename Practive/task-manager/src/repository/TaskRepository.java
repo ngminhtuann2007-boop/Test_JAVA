@@ -1,10 +1,10 @@
 package repository;
 
 import model.Task;
-import service.TaskService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public class TaskRepository{
@@ -15,13 +15,13 @@ public class TaskRepository{
 
     public List<Task> findAll(){ return tasks; }
     
-    public Task findById(UUID id){
+    public Optional<Task> findById(UUID id){
         return tasks.stream()
                     .filter(task -> task.getId().equals(id))
-                    .findFirst()
-                    .orElse(null);
+                    .findFirst();
     }
 
-    public void deleteBtId(UUID id){}
-    
+    public boolean deleteById(UUID id){
+        return tasks.removeIf(task -> task.getId().equals(id));
+    }
 }

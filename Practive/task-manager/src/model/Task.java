@@ -3,6 +3,8 @@ package model;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+import util.Input;
+
 public class Task {
     UUID id;
     String title;
@@ -12,7 +14,7 @@ public class Task {
     LocalDateTime createdAt;
 
     public Task(String title, String description, Priority priority, TaskStatus status,LocalDateTime createdAt) {
-        this.id = UUID.randomUUID();
+        this.id = Input.createUUID();
         this.title = title;
         this.description = description;
         this.priority = priority;
