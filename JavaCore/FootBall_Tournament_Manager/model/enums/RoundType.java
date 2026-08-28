@@ -1,0 +1,8 @@
+package FootBall_Tournament_Manager.model.enums;
+
+public enum RoundType {
+    GROUP_STAGE,
+    QUARTER_FINAL,
+    SEMI_FINAL,
+    FINAL
+}
