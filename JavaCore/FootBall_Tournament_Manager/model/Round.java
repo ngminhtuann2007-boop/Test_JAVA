@@ -1,7 +1,7 @@
-package FootBall_Tournament_Manager.model;
+package model;
 
 import java.util.Objects;
-import FootBall_Tournament_Manager.model.enums.RoundType;
+import model.enums.RoundType;
 
 public class Round {
     private final RoundType type;

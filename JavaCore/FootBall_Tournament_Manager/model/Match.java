@@ -1,10 +1,10 @@
-package FootBall_Tournament_Manager.model;
+package model;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
-import FootBall_Tournament_Manager.model.enums.MatchStatus;
+import model.enums.MatchStatus;
 
 public class Match {
     private final UUID id;

@@ -1,4 +1,4 @@
-package FootBall_Tournament_Manager.model;
+package model;
 
 import java.time.LocalDate;
 import java.util.UUID;

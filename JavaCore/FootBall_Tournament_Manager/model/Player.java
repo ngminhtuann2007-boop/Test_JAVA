@@ -1,9 +1,9 @@
-package FootBall_Tournament_Manager.model;
+package model;
 
 import java.util.Objects;
 import java.util.UUID;
 
-import FootBall_Tournament_Manager.model.enums.Position;
+import model.enums.Position;
 public class Player {
     private final UUID id;
     private String name;

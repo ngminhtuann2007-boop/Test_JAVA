@@ -1,4 +1,4 @@
-package FootBall_Tournament_Manager.model.enums;
+package model.enums;
 
 public enum Position {
     GOALKEEPER,
